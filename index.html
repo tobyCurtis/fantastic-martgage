@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+  <title>mortgageQuery</title>
+  <script src="/javascript/jquery-2.2.3.js"></script>
+</head>
+<body>
+  <form action="javascript:compute()">
+    Loan Balance:  
+    <input type="number" id="balance"><br>
+    Interest Rate (%):  
+    <input type="number" id="rate"><br>
+    Loan Term (years):  
+    <input type="number" id="term"><br>
+    Period
+    <select id="period">
+      <option value = "12">Monthly</option>
+      <option value = "24">Bi-Monthly</option>
+    </select>
+    <button type="submit" >I owe what?!</button>
+  </form>
+  <p id="output"></p>
+  
+  
+  <script src="/javascript/index.js"></script>
+</body>
