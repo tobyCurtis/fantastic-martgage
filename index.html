@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 
 <head>
+<!--  Page title, fonts, jQuery, and my javascript file loaded-->
   <title>mortgageQuery</title>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/index.css">
   <script src="/javascript/jquery-2.2.3.js"></script>
 </head>
 <body>
+  
+<!--  Container for my form, headline, and output-->
+  <div id="container">
+  <h1>mortgageQuery<br><hr></h1>
+   
+    
+<!--  form to take in information about mortgage-->
   <form action="javascript:compute()">
-    Loan Balance:  
-    <input type="number" id="balance"><br>
-    Interest Rate (%):  
-    <input type="number" id="rate"><br>
-    Loan Term (years):  
-    <input type="number" id="term"><br>
-    Period
-    <select id="period">
-      <option value = "12">Monthly</option>
-      <option value = "24">Bi-Monthly</option>
+    <label for="balance">Loan Balance: </label>  
+    <input type="number" id="balance" name = "ba;ance"><br>
+    <label for="rate">Interest Rate (%): </label>  
+    <input type="number" id="rate" name="rate"><br>
+    <label for="term">Loan Term (years):</label>  
+    <input type="number" id="term" name="term"><br>
+    <label for="period">Period</label>
+    <select id="period" name ="period">
+      <option value = "12" class="periodOpt">Monthly</option>
+      <option value = "24" class="periodOpt">Bi-Monthly</option>
     </select>
     <button type="submit" >I owe what?!</button>
   </form>
+    
+<!--    output element I will inject text into-->
   <p id="output"></p>
-  
+  </div>
   
   <script src="/javascript/index.js"></script>
 </body>
