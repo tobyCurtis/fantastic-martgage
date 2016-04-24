@@ -1,50 +1,38 @@
 *
 {
- font-family: 'Arvo', serif; 
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+
 }
 
-#container
+h1
 {
-  position: absolute;
-  width: 350px;
-  text-align: right;
+  font-size: 4em;
 }
 
-label{
-    display:inline;
-    float:left;
-    margin-right:4px;
-    vertical-align:top;
-    text-align: right;
-  margin: 10px;
-  
-
-}
-
-input
+label
 {
- float:right; 
-   margin: 10px;
+
+  width:100%;
+  font-size: 1.25em;
 }
+
 
 select
 {
- float: left;
-  margin-left: 0px;
-  margin-top: 10px;
+  margin: 10px 0;
+
 }
 
-button
-{
-
-  margin-right: 10px;
-}
-
-h1,
 p
 {
- text-align: left; 
+  margin: 20px 0;
+  font-size: 2em;
 }
+
+
+
+
+
 
 
 
