@@ -18,31 +18,34 @@
     <!--  form to take in information about mortgage-->
     <form action="javascript:compute()" role="form">
       <div class="form-group">
-        <label for="balance">Loan Balance:
-          <input type="number" id="balance" class="form-control" step="0.01" name="ba;ance">
+        <label for="balance">Loan Balance ($);
+
+          <input type="number" id="balance" class="form-control" step="0.01" name="balance" required>
+
         </label>
       </div>
-      <div id="form-group">
+      <div class="form-group">
         <label for="rate">Interest Rate (%):
-          <input type="number" class="form-control" id="rate" step="0.01" name="rate">
+          <input type="number" class="form-control" id="rate" step="0.01" name="rate" required>
         </label>
       </div>
-      <div id="form-group">
+      <div class="form-group">
         <label for="term">Loan Term (years):
-          <input type="number" class="form-control" id="term" name="term">
+          <input type="number" class="form-control" id="term" name="term" required>
         </label>
-        <div id="form-group form-inline">
-          <label for="period">Period
-            <select id="period" name="period">
-              <option value="12" class="periodOpt">Monthly</option>
-              <option value="24" class="periodOpt">Bi-Monthly</option>
-            </select>
-          </label>
-          <button type="submit" class="btn-primary btn-lg form-inline">I owe what?!</button>
-        </div>
+      </div>
+      <div class="form-group">
+        <label for="period">Period
+          <select id="period" name="period">
+            <option value="12" class="periodOpt">Monthly</option>
+            <option value="24" class="periodOpt">Bi-Monthly</option>
+          </select>
+          <button type="submit" class="btn-primary btn-lg form-inline" id="button">I owe what?!</button>
+        </label>
+      </div>
     </form>
     <!--    output element I will inject text into-->
     <p id="output"></p>
-    </div>
-    <script src="/javascript/index.js"></script>
+  </div>
+  <script src="/javascript/index.js"></script>
 </body>

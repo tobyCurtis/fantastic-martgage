@@ -1,38 +1,33 @@
-*
-{
-    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
-
+* {
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 }
 
-h1
-{
+h1 {
   font-size: 4em;
 }
 
-label
-{
-
-  width:100%;
+label {
+  width: 100%;
   font-size: 1.25em;
 }
 
-
-select
-{
+select {
   margin: 10px 0;
-
 }
 
-p
-{
+p {
   margin: 20px 0;
   font-size: 2em;
 }
 
+#button 
+{
+	margin: 0 0 0 10px;
+}
 
+.fixedChar
+{
 
-
-
-
-
-
+	position: relative; 
+	left: 20px.
+}
