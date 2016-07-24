@@ -1,33 +1,35 @@
 * {
-  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 }
 
-h1 {
-  font-size: 4em;
+#heading {
+    font-size: 4em;
+    color: #A66D3B;
+}
+
+.jumbotron {
+    background-color: #FCF8E3;
 }
 
 label {
-  width: 100%;
-  font-size: 1.25em;
-}
-
-select {
-  margin: 10px 0;
+    width: 100%;
+    font-size: 1.25em;
 }
 
 p {
-  margin: 20px 0;
-  font-size: 2em;
+    margin: 20px 0;
+    font-size: 2em;
 }
 
-#button 
-{
-	margin: 0 0 0 10px;
+.fixedChar {
+    position: relative;
+    left: 20px.
 }
 
-.fixedChar
-{
+#map {
+    width: 100%
+}
 
-	position: relative; 
-	left: 20px.
+.holder {
+background-color: red;
 }

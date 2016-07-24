@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 
 <head>
-  <!--  Page title, fonts, jQuery, and my javascript file loaded-->
-  <title>mortgageQuery</title>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/index.css">
-  <script src="/javascript/jquery-2.2.3.js"></script>
+    <!--  Page title, fonts, jQuery, and my javascript file loaded-->
+    <title>mortgageQuery</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="/javascript/jquery-2.2.3.js"></script>
 </head>
 
 <body>
-  <!--  Container for my form, headline, and output-->
-  <div class="container">
-    <h1>mortgageQuery<br><hr></h1>
-    <!--  form to take in information about mortgage-->
-    <form action="javascript:compute()" role="form">
-      <div class="form-group">
-        <label for="balance">Loan Balance ($);
-
-          <input type="number" id="balance" class="form-control" step="0.01" name="balance" required>
-
-        </label>
-      </div>
-      <div class="form-group">
-        <label for="rate">Interest Rate (%):
-          <input type="number" class="form-control" id="rate" step="0.01" name="rate" required>
-        </label>
-      </div>
-      <div class="form-group">
-        <label for="term">Loan Term (years):
-          <input type="number" class="form-control" id="term" name="term" required>
-        </label>
-      </div>
-      <div class="form-group">
-        <label for="period">Period
-          <select id="period" name="period">
-            <option value="12" class="periodOpt">Monthly</option>
-            <option value="24" class="periodOpt">Bi-Monthly</option>
-          </select>
-          <button type="submit" class="btn-primary btn-lg form-inline" id="button">I owe what?!</button>
-        </label>
-      </div>
-    </form>
-    <!--    output element I will inject text into-->
-    <p id="output"></p>
-  </div>
-  <script src="/javascript/index.js"></script>
+    <!--  Container for my form, headline, and output-->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 id="heading">mortgageQuery</h1>
+            <p>A Mortgage Calculator written with jQuery</p>
+        </div>
+    </div>
+    <div class="container">
+        <!--  form to take in information about mortgage-->
+        <form action="javascript:compute()" role="form">
+            <div class="form-group">
+                <label for="balance">Loan Balance ($);
+                    <input type="number" id="balance" class="form-control" step="0.01" name="balance" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="rate">Interest Rate (%):
+                    <input type="number" class="form-control" id="rate" step="0.01" name="rate" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="term">Loan Term (years):
+                    <input type="number" class="form-control" id="term" name="term" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="period">Period</label>
+                <select id="period" name="period" class="form-control">
+                    <option value="12" class="periodOpt">Monthly</option>
+                    <option value="24" class="periodOpt">Bi-Monthly</option>
+                </select>
+                <button type="submit" class="btn-warning btn-lg form-inline" id="button">I owe what?!</button>
+            </div>
+        </form>
+        <!--    output element I will inject text into-->
+        <p id="output"></p>
+    </div>
+    <script src="/javascript/index.js"></script>
 </body>
